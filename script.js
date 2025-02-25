@@ -51,18 +51,18 @@ document.addEventListener("click", function (event) {
 
 // Try autoplaying video on page load (some browsers may block it)
 document.addEventListener("DOMContentLoaded", function () {
-    try{
-        const ws = new WebSocket("ws://gsvault.sg:5555/test");
-        ws.onopen = () => {
-            console.log("Connected to /test WebSocket");
-            ws.close();
-        };
-        ws.onclose = () => {
-            console.log("Disconnected from /test WebSocket");
-        };
-    }catch (error){
-        console.log(error)
-    }
+    // try{
+    //     const ws = new WebSocket("ws://gsvault.sg:5555/test");
+    //     ws.onopen = () => {
+    //         console.log("Connected to /test WebSocket");
+    //         ws.close();
+    //     };
+    //     ws.onclose = () => {
+    //         console.log("Disconnected from /test WebSocket");
+    //     };
+    // }catch (error){
+    //     console.log(error)
+    // }
     let video = document.getElementById("birthdayVideo");
     video.muted = true; // Autoplay requires mute first
     video.play().then(() => {
