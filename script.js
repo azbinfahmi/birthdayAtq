@@ -1,5 +1,3 @@
-const ws = new WebSocket("ws://gsvault.sg:5555/test");
-
 const message = "I wanted to make this birthday special for you. Hope this little gift brings a smile to your face! 🎶";
 let index = 0;
 function typeWriter() {
@@ -54,6 +52,7 @@ document.addEventListener("click", function (event) {
 // Try autoplaying video on page load (some browsers may block it)
 document.addEventListener("DOMContentLoaded", function () {
     try{
+        const ws = new WebSocket("ws://gsvault.sg:5555/test");
         ws.onopen = () => {
             console.log("Connected to /test WebSocket");
             ws.close();
