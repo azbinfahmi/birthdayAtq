@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="backgroundVideo" autoplay loop muted>
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="container">
+        <h1>Happy Birthday Atiqahhhhh! 🎉</h1>
+        <p id="message"></p>
+        <button id="giftButton">Click for a Surprise 🎁</button>
+        
+        <div id="giftSection" class="hidden">
+            <video id="birthdayVideo" width="300" playsinline autoplay loop>
+                <source src="My Video.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+            <p id="secondMessage" class="hidden-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
